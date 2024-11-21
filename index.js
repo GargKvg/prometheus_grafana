@@ -78,3 +78,11 @@ app.get("/slow", async (req, res) => {
 app.listen(8000, () => {
   console.log("Example app listening on port 8000!");
 });
+
+// # To setup grafana run this on terminal
+
+// # docker run -d -p 3000:3000 --name=grafana grafana/grafana-oss
+
+// # To setup loki run this on terminal
+
+// # docker run -d --name=loki -p 3100:3100 grafana/loki
